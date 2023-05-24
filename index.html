@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog App</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<header>
+			<h1 class="text-center text-3xl">My Blog</h1>
+		</header>
+
+		<main class="flex flex-col gap-20 my-10">
+			<section id="add-post" class="flex flex-col gap-10 items-center mb-10">
+				<h2 class="text-2xl font-semibold">Add a New Post</h2>
+				<form
+					class="flex flex-col items-center justify-center gap-5 p-7 rounded-2xl border-2 border-rose-400"
+					id="add-post-form"
+				>
+					<input
+						class="input input-bordered border-2 border-gray-400 text-xl"
+						type="text"
+						id="title-input"
+						placeholder="Title"
+						required
+					/>
+					<textarea
+						class="textarea textarea-bordered border-2 border-gray-400 text-lg"
+						id="content-input"
+						placeholder="Content"
+						required
+					></textarea>
+					<button
+						class="btn btn-outline btn-success border-[2.5px] text-lg"
+						type="submit"
+					>
+						Add Post
+					</button>
+				</form>
+			</section>
+
+			<hr />
+
+			<section id="blog-posts" class="flex flex-col gap-10 items-center">
+				<h2 class="text-3xl font-semibold mb-5">Blog Posts</h2>
+				<ul
+					id="posts-list"
+					class="flex flex-col items-center justify-center gap-5 p-7"
+				></ul>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>

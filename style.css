@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+}
+
+main {
+	padding: 20px;
+}
+
+#blog-posts {
+	margin-bottom: 30px;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+#posts-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.post {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.post h3 {
+	margin-top: 0;
+}
+
+#add-post-form input,
+#add-post-form textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
